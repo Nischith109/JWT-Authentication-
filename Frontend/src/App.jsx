@@ -6,7 +6,7 @@ function App() {
   const[email, setEmail] = useState("");
   const[password, setPassword] = useState("");
   const[message, setMessage] = useState("");
-  const API = "http://localhost:5000/api/auth";
+  const API = "https://jwt-authentication-wpxa.onrender.com";
   const registerUser = async () => {
     try {
       const res = await axios.post
