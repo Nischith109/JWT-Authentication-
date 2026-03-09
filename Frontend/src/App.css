@@ -1,0 +1,115 @@
+/* Background */
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", Roboto, sans-serif;
+  background: linear-gradient(135deg, #1e293b, #0f172a);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Card Container */
+
+.container {
+  background: #ffffff;
+  padding: 40px;
+  width: 350px;
+  border-radius: 12px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+  text-align: center;
+  animation: fadeIn 0.6s ease-in-out;
+}
+
+/* Title */
+
+.container h1 {
+  margin-bottom: 25px;
+  font-size: 24px;
+  color: #1e293b;
+}
+
+/* Inputs */
+
+input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  border: 1px solid #d1d5db;
+  font-size: 14px;
+  transition: all 0.3s ease;
+  box-sizing: border-box;
+}
+
+input:focus {
+  border-color: #6366f1;
+  outline: none;
+  box-shadow: 0 0 5px rgba(99,102,241,0.3);
+}
+
+/* Button Container */
+
+.buttons {
+  display: flex;
+  gap: 10px;
+}
+
+/* Buttons */
+
+button {
+  flex: 1;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+/* Register Button */
+
+button:first-child {
+  background: #6366f1;
+  color: white;
+}
+
+button:first-child:hover {
+  background: #4f46e5;
+  transform: translateY(-2px);
+}
+
+/* Login Button */
+
+button:last-child {
+  background: #10b981;
+  color: white;
+}
+
+button:last-child:hover {
+  background: #059669;
+  transform: translateY(-2px);
+}
+
+/* Message */
+
+p {
+  margin-top: 15px;
+  font-size: 14px;
+  color: #374151;
+}
+
+/* Animation */
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
